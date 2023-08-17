@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <h1>Task Mate</h1>
+    </header>
+
+    <main>
+        <div class="task-list">
+        </div>
+        <div class="add-task">
+            <form class="task-form">
+                <h3>Create new task</h3>
+
+                <label>Title</label>
+                <input type="text" id="title"/>
+
+                <label>Status</label>
+                <select id="status">
+                    <option value="to-do">To-do</option>
+                    <option value="doing">Doing</option>
+                    <option value="done">Done</option>
+                </select>
+
+                <label>Date</label>
+                <input type="date" id="date"/>
+
+                <button>Add task</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
